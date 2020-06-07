@@ -145,11 +145,11 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="https://github.com/anubhavshankar17/thephysicstutor/blob/master/PhysicsTutor%20Square.png?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Physics Tutor Logo">
+      <img src="https://github.com/anubhavshankar17/thephysicstutor/blob/master/PhysicsTutor%20Square.png?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Physics Tutor Logo" link="https://www.youtube.com/channel/UC-fBjdO0V8aiZolXIJ42onQ">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="edit">
+      <img src="https://github.com/anubhavshankar17/thephysicstutor/blob/master/image1.jpg?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My Fung Feature">
     </div>
 
     <div class="w3-col m3">
@@ -186,7 +186,7 @@ body, html {
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+    <a href="link" id="caption" class="w3-opacity w3-large"></a>
   </div>
 </div>
 
@@ -253,6 +253,8 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+  var linkText = document.getElementById("link");
+  linkText.innerHTML = element.link;
 }
 
 // Change style of navbar on scroll
